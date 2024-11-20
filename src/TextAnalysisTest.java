@@ -33,13 +33,13 @@ public class TextAnalysisTest {
         assertFalse(analysis.shouldStop("Sabina"));
 
     }
-
+//Test som verifierar att metoden getLongestWord() korrekt returnerar det längsta ordet från given text
     @Test
     public void testGetLongestWord() {
         TextAnalysis analysis = new TextAnalysis();
-
+//Uppdatera statistik med en rad och kontrollera längsta ordet
         analysis.updateStatistics("Jag heter Sabina Civgin");
-        assertEquals("Sabina", analysis.getLongestWord());
+        assertEquals("Sabina", analysis.getLongestWord()); //kontrollerar att det längsta ordet hittills är "Sabina".
 
     }
 
