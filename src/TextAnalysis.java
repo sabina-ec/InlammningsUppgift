@@ -32,19 +32,19 @@ public class TextAnalysis {
 
     // Getters för att hämta statistiken
     public int getLineCount() {
-        return lineCount;
+        return lineCount;    //Returnerar värdet av lineCount, som visar totalt antal rader.
     }
 
     public int getCharacterCount() {
-        return characterCount;
+        return characterCount;  //	Returnerar värdet av characterCount, som visar totalt antal tecken.
     }
 
     public int getWordCount() {
-        return wordCount;
+        return wordCount;  //	Returnerar värdet av wordCount, som visar totalt antal ord.
     }
 
     public String getLongestWord() {
-        return longestWord;
+        return longestWord;  //Returnerar longestWord, vilket visar det längsta ordet som hittills har hittats i texten.
     }
 }
 
