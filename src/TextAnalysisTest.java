@@ -1,7 +1,5 @@
 import org.junit.Test;
-
 import static org.junit.Assert.*;
-
 public class TextAnalysisTest {
 
     @Test
@@ -40,13 +38,7 @@ public class TextAnalysisTest {
 //Uppdatera statistik med en rad och kontrollera längsta ordet
         analysis.updateStatistics("Jag heter Sabina Civgin");
         assertEquals("Sabina", analysis.getLongestWord()); //kontrollerar att det längsta ordet hittills är "Sabina".
-
-    }
-
-
-
-
-
+}
 
 }
 
