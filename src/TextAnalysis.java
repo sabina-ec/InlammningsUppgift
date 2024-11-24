@@ -5,7 +5,7 @@ public class TextAnalysis {
     //Deklaration av privata variabler
     //Variablerna är privata för att skydda dem från direkt åtkomst eller modifiering utanför klassen.
     private int lineCount = 0;          //Ingen rad har analyserats ännu, så räkningen börjar från noll.
-    private int characterCount = 0    ;//Inga tecken har analyserats ännu.
+    private int characterCount = 0;    //Inga tecken har analyserats ännu.
     private int wordCount = 0;        // Inga ord har analyserats ännu.
     private String longestWord = ""; //Det längsta ordet är okänt vid start, så det sätts till en tom sträng.
 
