@@ -10,12 +10,12 @@ public class TextAnalysis {
 
     // Metod för att uppdatera statistiken för en rad text
     public void updateStatistics(String text) {
-        lineCount++; // Post-inkrementering  -Öka antal rader
-        characterCount += text.length(); // Öka antal tecken
+        lineCount++; // Post-inkrementering  -Öka antal rader med varje anrop av metoden.
+        characterCount += text.length(); // Öka antal tecken baserat på längden av den givna texten.
 
         // Dela upp texten i ord och uppdatera antal ord och längsta ord
-        String[] words = text.split(" ");
-        wordCount += words.length;
+        String[] words = text.split(" "); //Metoden split(" ") delar upp strängen text i en array av ord baserat på mellanslag som avgränsare.
+        wordCount += words.length;       //Lägger till antalet ord i det totala antalet ord
 
         //enhanced for-loop  som itererar genom alla element i arrayen words
         for (String word : words) {
