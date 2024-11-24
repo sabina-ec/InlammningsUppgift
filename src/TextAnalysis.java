@@ -20,7 +20,7 @@ public class TextAnalysis {
 
         //enhanced for-loop  som itererar genom alla element i arrayen words
         for (String word : words) {
-            if (word.length() > longestWord.length()) {
+            if (word.length() > longestWord.length()) {         //Kontrollerar om det nuvarande ordet har större längd än det nuvarande längsta ordet.
                 longestWord = word; // Uppdatera längsta ordet om nödvändigt
             }
         }
