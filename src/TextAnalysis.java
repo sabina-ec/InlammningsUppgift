@@ -3,10 +3,11 @@
 //hålla reda på statistik som antal rader, tecken, ord och det längsta ordet.
 public class TextAnalysis {
     //Deklaration av privata variabler
-    private int lineCount = 0;
-    private int characterCount = 0;
-    private int wordCount = 0;
-    private String longestWord = "";
+    //Variablerna är privata för att skydda dem från direkt åtkomst eller modifiering utanför klassen.
+    private int lineCount = 0;          //Ingen rad har analyserats ännu, så räkningen börjar från noll.
+    private int characterCount = 0    ;//Inga tecken har analyserats ännu.
+    private int wordCount = 0;        // Inga ord har analyserats ännu.
+    private String longestWord = ""; //Det längsta ordet är okänt vid start, så det sätts till en tom sträng.
 
     // Metod för att uppdatera statistiken för en rad text
     public void updateStatistics(String text) {
@@ -30,7 +31,7 @@ public class TextAnalysis {
         return text.equalsIgnoreCase("stop");
     }
 
-    // Getters för att hämta statistiken
+    // Getters som används för att hämta värden av privata variabler i  detta fall för att hämta statistiken.
     public int getLineCount() {
         return lineCount;    //Returnerar värdet av lineCount, som visar totalt antal rader.
     }
