@@ -28,7 +28,9 @@ public class TextAnalysis {
 
     // Metod för att kontrollera om texten är "stop"
     public boolean shouldStop(String text) {
-        return text.equalsIgnoreCase("stop");
+        return text.equalsIgnoreCase("stop"); //kontrollera om värdet på variabeln text är lika med strängen "stop"
+                                             // oavsett skillnad mellan stora och små bokstäver.
+                                            // Om strängarna är lika returneras true, annars false.
     }
 
     // Getters som används för att hämta värden av privata variabler i  detta fall för att hämta statistiken.
