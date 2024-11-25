@@ -20,7 +20,7 @@ public class TextAnalysisTest {
 
     @Test
     public void testShouldStop() {
-        TextAnalysis analysis = new TextAnalysis();////Skapar en ny instans av TextAnalysis-klassen
+        TextAnalysis analysis = new TextAnalysis();  //Skapar en ny instans av TextAnalysis-klassen
 
         // Test när inmatningen är "stop" - metoden ska returnera true
         assertTrue(analysis.shouldStop("stop"));
