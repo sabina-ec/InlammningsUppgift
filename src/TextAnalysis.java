@@ -20,7 +20,7 @@ public class TextAnalysis {
                                         //Det betyder att värdet av variabeln wordCount ökas med antalet element i arrayen words.
         //enhanced for-loop  som itererar genom alla element i arrayen words
         for (String word : words) {
-            if (word.length() > longestWord.length()) {         //Kontrollerar om det nuvarande ordet har större längd än det nuvarande längsta ordet.
+            if (word.length() > longestWord.length()) {  //Kontrollerar om det nuvarande ordet har större längd än det nuvarande längsta ordet.
                 longestWord = word; // Uppdatera längsta ordet om nödvändigt
             }
         }
